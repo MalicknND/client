@@ -1,0 +1,164 @@
+.footer {
+  margin: 100px 200px 20px 200px;
+
+  .top {
+    display: flex;
+    gap: 50px;
+
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: justify;
+      font-size: 14px;
+
+      h1 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #555;
+      }
+
+      span {
+        color: gray;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        color: #2879fe;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .copyright {
+        margin-left: 20px;
+        font-size: 12px;
+        color: gray;
+      }
+    }
+
+    .right {
+      img {
+        height: 50px;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    margin: 80px 100px 20px 100px;
+
+    .top {
+      gap: 30px;
+
+      .item {
+        font-size: 13px;
+
+        h1 {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .bottom {
+      .left {
+        .logo {
+          font-size: 22px;
+        }
+
+        .copyright {
+          font-size: 11px;
+        }
+      }
+
+      .right {
+        img {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin: 60px 50px 20px 50px;
+
+    .top {
+      flex-direction: column;
+      gap: 20px;
+
+      .item {
+        font-size: 12px;
+
+        h1 {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      .left {
+        .logo {
+          font-size: 20px;
+        }
+
+        .copyright {
+          font-size: 10px;
+        }
+      }
+
+      .right {
+        img {
+          height: 35px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin: 40px 20px 20px 20px;
+
+    .top {
+      gap: 10px;
+
+      .item {
+        font-size: 11px;
+
+        h1 {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .bottom {
+      .left {
+        .logo {
+          font-size: 18px;
+        }
+
+        .copyright {
+          font-size: 9px;
+        }
+      }
+
+      .right {
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
