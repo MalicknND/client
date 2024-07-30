@@ -17,14 +17,14 @@ const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <div className="left">
-          <div className="item">
+          {/* <div className="item">
             <img src="/img/en.png" alt="" />
             <KeyboardArrowDownIcon />
           </div>
           <div className="item">
             <span>USD</span>
             <KeyboardArrowDownIcon />
-          </div>
+          </div> */}
           <div className="item">
             <Link className="link" to="/products/1">
               Women
@@ -47,11 +47,11 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="right">
-          <div className="item">
+          {/* <div className="item">
             <Link className="link" to="/">
               Homepage
             </Link>
-          </div>
+          </div> */}
           <div className="item">
             <Link className="link" to="/">
               About
