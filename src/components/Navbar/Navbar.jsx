@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="right">
           <div className="icons">
             <img src="/icons/search.svg" alt="search" id="icon" />
-            <div className="cartIcon" onClick={() => setOpen(!open)}>
+            <div className="cartIcon">
               <img src="/icons/cart.svg" alt="cart" id="icon" />
 
               {/* <span>{products.length}</span> */}
