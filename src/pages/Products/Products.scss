@@ -1,0 +1,87 @@
+.products {
+  padding: 30px 50px;
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    position: -webkit-sticky; /* Pour compatibilité avec les anciens navigateurs WebKit */
+    position: sticky;
+    top: 0; /* Ajustez cette valeur si vous avez un en-tête fixe */
+    height: calc(
+      100vh - 50px
+    ); /* Assurez-vous que la hauteur est suffisante pour l'effet sticky */
+
+    .filterItem {
+      margin-bottom: 30px;
+
+      h2 {
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .inputItem {
+        margin-bottom: 10px;
+        label {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 3;
+
+    .catImg {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 20px 30px;
+
+    .right {
+      flex: 1;
+
+      .catImg {
+        height: 250px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px 20px;
+
+    .right {
+      .catImg {
+        height: 200px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px 15px;
+
+    .right {
+      .catImg {
+        height: 150px;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    padding: 5px 10px;
+
+    .right {
+      .catImg {
+        height: 100px;
+      }
+    }
+  }
+}
